@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F05D5D"
+    tools:context=".BurgerDetailActivity">
+
+    <ImageView
+        android:id="@+id/detailimage"
+        android:layout_width="152dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/detailname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/burgeri" />
+
+    <TextView
+        android:id="@+id/detailname"
+        android:layout_width="180dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="26dp"
+        android:text="TextView"
+        android:textColor="#FDFCFC"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detailimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detailcontent"
+        android:layout_width="357dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="29dp"
+        android:text="detail description"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailimage" />
+
+    <TextView
+        android:id="@+id/detailcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="322dp"
+        android:text="TextView"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailcontent" />
+
+    <TextView
+        android:id="@+id/detailprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="63dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/detailcal"
+        app:layout_constraintTop_toBottomOf="@+id/detailcontent" />
+
+    <Button
+        android:id="@+id/detailaddtocart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="286dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="12dp"
+        android:text="Add to Cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailprice" />
+
+    <TextView
+        android:id="@+id/detailpriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="40dp"
+        android:text="Price- $"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/detailprice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/detailcal"
+        app:layout_constraintTop_toBottomOf="@+id/detailcontent" />
+
+    <TextView
+        android:id="@+id/detailcalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="153dp"
+        android:text="Calories:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/detailpriceText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailcontent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
